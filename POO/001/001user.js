@@ -14,10 +14,10 @@ let user = {
 
 alert(user.name);
 
+// Se establece un nuevo valor a la propiedad.
 user.name = "Peter Pan";
-
 alert(user.name);
 
+// Delete para eliminar propiedades.
 delete user.name;
-
 alert(user.name);

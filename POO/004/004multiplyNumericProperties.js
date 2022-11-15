@@ -32,6 +32,7 @@ let menu = {
   title: "Mi menú"
 };
 
+// Para multiplicar solamente los números, comprobaremos el tipo que tiene el valor y en caso de que sea number, multiplicamos.
 function multiplyNumeric (obj){
   for (let key in obj) {
     if (typeof obj[key] === "number") {

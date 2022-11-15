@@ -7,6 +7,7 @@ vacía o presionando “CANCEL”. En tal caso la función debe devolver null. *
 
 function readNumber() {
     let numero = prompt("Introduzca un número")
+    // Hacemos un bucle en el que mientras numero sea un Nan, siga pidiendo un número.
     while (isNaN(numero)) {
         numero = prompt("Introduzca un número");
         if (numero == null) {

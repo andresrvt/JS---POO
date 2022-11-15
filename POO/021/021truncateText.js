@@ -10,6 +10,7 @@ truncate("Hola a todos!", 20) = "Hola a todos!" */
 
 function truncate(str, maxlength) {
   if (str.length > maxlength) {
+    // Cortamos el string por el límite que le hayamos pasado a la función, después irán los puntos.
     return str.slice(0, maxlength - 1) + "...";
   }else{
     return str;

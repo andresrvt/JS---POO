@@ -10,6 +10,6 @@ alert( randomInteger(1, 5) ); // 5 */
 
 function randomInteger(min,max) {
   let numero = min + Math.random() * (max + 1 - min)
-  // Con Math.floor() redondeamos a la baja y así le quitamos los decimales.
+  // Con Math.floor() redondeamos a la baja y coneguimos quitarles los decimales.
   return Math.floor(numero);
 }

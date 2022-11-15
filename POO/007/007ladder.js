@@ -44,9 +44,3 @@ let ladder = {
 
 // Para encadenar métodos en Js, necesitaremos que esos métodos devuelvan un objeto. (No es obligatorio que sea el mismo)
 ladder.up().up().down().showStep().down().showStep();
-
-/* ladder.up();
-ladder.down();
-ladder.showStep(); // 1
-ladder.down();
-ladder.showStep(); // 0 */

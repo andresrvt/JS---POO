@@ -19,8 +19,6 @@ let grupos = [
   {nombre: "Metallica", genero: "Heavy Metal"}
 ];
 
-
-// 
 let heavyMetal = grupos.filter(grupos => grupos.genero == "Heavy Metal");
 let coldPlay = grupos.find(grupos => grupos.nombre == "Cold Play");
 let posicionColdPlay = grupos.findIndex(grupos => grupos.nombre == "Cold Play");

@@ -35,4 +35,39 @@ for (let key of disney) {
     document.write(key.nombre + "<br>");
 }
 
+document.write("<br><hr><br>")
 
+disney.unshift({nombre: "Capitán Garfio", pelicula: "Peter Pan"});
+
+for (let key of disney) {
+    document.write(key.nombre + "<br>");
+}
+
+document.write("<br><hr><br>")
+
+let personajesPeterPan = disney.filter(disney => disney.pelicula == "Peter Pan");
+
+document.write(personajesPeterPan.map(item=>item.nombre + " - "+ item['pelicula'] + "<br>"));
+
+document.write("<br><hr><br>")
+
+let posicionCampanilla = disney.findIndex(disney => disney.nombre == "Campanilla");
+
+document.write("La posición de Campanilla es " + posicionCampanilla + "<br>");
+
+document.write("<br><hr><br>")
+
+let cocodrilo = disney.find(disney => disney.nombre == "Cocodrilo");
+
+document.write(cocodrilo + "<br>") // Muestra undefined porque no encuentra nada.
+
+function shuffle(disney) {
+    let disneyOrdenado = disney.sort(()=> Math.random() - 0.5);
+    return disneyOrdenado;
+}
+
+document.write("<br><hr><br>")
+
+for (let key of shuffle(disney)) {
+    document.write(key.nombre + "<br>");
+}

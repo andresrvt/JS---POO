@@ -9,6 +9,7 @@ checkSpam("coneja inocente") == false */
 
 function checkSpam(str) {
 
+  // Para que sea insensible, lo pasamos todos a minúsculas y comprobamos si se encuentran las palabras.
   let minusculas = str.toLowerCase();
 
   if (minusculas.includes("viagra") || minusculas.includes("xxx")) {
